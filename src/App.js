@@ -7,20 +7,20 @@ function App() {
   const commands = [
     {
       command: "haku *",
-      callback: (website) => {
-        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&ia=web");
+      callback: (keywords) => {
+        window.open("https://duckduckgo.com/?q=" + keywords + "&t=h_&ia=web");
       },
     },
     {
       command: "kuva *",
-      callback: (website) => {
-        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&iax=images&ia=images");
+      callback: (keywords) => {
+        window.open("https://duckduckgo.com/?q=" + keywords + "&t=h_&iax=images&ia=images");
       },
     },
     {
       command: "video *",
-      callback: (website) => {
-        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&iax=videos&ia=videos");
+      callback: (keywords) => {
+        window.open("https://duckduckgo.com/?q=" + keywords + "&t=h_&iax=videos&ia=videos");
       },
     },
     {
