@@ -42,9 +42,11 @@ function App() {
       },
     },
   ];
+
   const { transcript, resetTranscript } = useSpeechRecognition({ commands });
   const [isListening, setIsListening] = useState(false);
   const microphoneRef = useRef(null);
+
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
     return (
       <div className="mircophone-container">
@@ -52,6 +54,7 @@ function App() {
       </div>
     );
   }
+
   const handleListing = () => {
     setIsListening(true);
     microphoneRef.current.classList.add("listening");
@@ -59,15 +62,18 @@ function App() {
       continuous: true,
     });
   };
+
   const handleStop = () => {
     setIsListening(false);
     microphoneRef.current.classList.remove("listening");
     SpeechRecognition.stopListening();
   };
+
   const handleReset = () => {
     handleStop();
     resetTranscript();
   };
+
   return (
     <div className="microphone-wrapper">
       <div className="mircophone-container">
@@ -98,4 +104,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
