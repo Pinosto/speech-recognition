@@ -1,3 +1,7 @@
 # Puheentunnistus ja haku toiminto
 
-## Kokeile komentoa "haku" ja sen jälkeen haettava asia. Tämä avaa duckduckgo haun kyseisellä asialla.
+## Kokeile komentoja "haku", "kuva", "video" ja sen jälkeen haettava asia. Tämä avaa duckduckgo haun kyseisellä asialla. 
+
+## Komennot "reset" ja "stop" lopettaa kuuntelun.
+
+## Sovellus on testattavissa Firebasessa [https://speech-recognition-ec673.web.app/]
