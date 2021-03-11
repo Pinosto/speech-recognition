@@ -8,7 +8,19 @@ function App() {
     {
       command: "haku *",
       callback: (website) => {
-        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&ia=definition");
+        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&ia=web");
+      },
+    },
+    {
+      command: "kuva *",
+      callback: (website) => {
+        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&iax=images&ia=images");
+      },
+    },
+    {
+      command: "video *",
+      callback: (website) => {
+        window.open("https://duckduckgo.com/?q=" + website + "&t=h_&iax=videos&ia=videos");
       },
     },
     {
